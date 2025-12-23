@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - master
+      - test
     types: ["opened", "edited", "reopened", "synchronize"]
 
 permissions:
