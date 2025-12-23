@@ -8,11 +8,15 @@ This is helpful when you're:
 
 ## Inputs
 
-| Input             | Description                                                                        | Required |
-| ----------------- | ---------------------------------------------------------------------------------- | -------- |
-| `github-token`    | GitHub token required to modify the PR title.                                      | ✅       |
-| `linear-api-key`  | Linear API key generated from https://linear.app/settings/api . (e.g. `lin_api_*)` | ✅       |
-| `linear-team-key` | Team key (e.g. ENG) for the created Linear issue.                                  | ✅       |
+| Input                        | Description                                                                        | Required |
+| ---------------------------- | ---------------------------------------------------------------------------------- | -------- |
+| `github-token`               | GitHub token required to modify the PR title.                                      | ✅       |
+| `linear-api-key`             | Linear API key generated from https://linear.app/settings/api . (e.g. `lin_api_*)` | ✅       |
+| `linear-team-key`            | Team key (e.g. ENG) for the created Linear issue.                                  | ✅       |
+| `linear-project-id`          | Project ID for the Linear issue.                                                   |          |
+| `linear-issue-label-ids`     | Comma delimited label IDs.                                                         |          |
+| `linear-created-issue-state-id` | Team state ID for the created Linear issue.                                    |          |
+| `linear-created-issue-title-prefix` | Title prefix for the created Linear issue.                                    |          |
 
 ## Outputs
 
