@@ -28,8 +28,8 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           linear-api-key: ${{secrets.LINEAR_API_KEY}}
           linear-team-key: "HYP"
-          linear-created-issue-title-prefix: "[GITHUB] " # Done
-          linear-created-issue-state-id: "af1371c3-2778-4ed8-8570-a8299664cbae" # Done
+          linear-created-issue-title-prefix: "[GITHUB] "
+          linear-created-issue-state-id: "c0f93ea4-b232-485d-a54b-c18793d42c2f" # In Review
           linear-issue-label-ids: "e2e742ad-6e68-4a35-ad6b-e8727449ed25,a53368e9-9be2-4c67-b4cc-83b280539314,2665b485-152c-430c-86d7-f5753c42524f" # Bug - Improvement - Protocol
           linear-project-id: "7b67822e-7d16-453f-bfb4-95919c0adeab"
       - name: Create comment in PR with Linear Issue link
