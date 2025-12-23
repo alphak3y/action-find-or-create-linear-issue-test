@@ -62,7 +62,7 @@ runs:
       with:
         linear-api-key: ${{inputs.linear-api-key}}
         linear-issue-label-ids: ${{inputs.linear-issue-label-ids}}
-        linear-project-ids: ${{inputs.linear-project-id}}
+        linear-issue-project-ids: ${{inputs.linear-project-id}}
     - name: Create the Linear Issue if no identifier found.
       id: create
       if: ${{always() && steps.find.outcome == 'failure'}}
