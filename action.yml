@@ -62,7 +62,7 @@ runs:
       with:
         linear-api-key: ${{inputs.linear-api-key}}
         linear-issue-label-ids: ${{inputs.linear-issue-label-ids}}
-        linear-issue-project-ids: ${{inputs.linear-project-id}}
+        linear-project-ids: ${{inputs.linear-project-id}}
     - name: Create the Linear Issue if no identifier found.
       id: create
       if: ${{always() && steps.find.outcome == 'failure'}}
@@ -76,7 +76,7 @@ runs:
         linear-attachment-url: ${{github.event.pull_request.html_url}}
         linear-attachment-title: "(#${{github.event.pull_request.number}}) ${{github.event.pull_request.title}}"
         linear-issue-label-ids: ${{inputs.linear-issue-label-ids}}
-        linear-project-id: ${{inputs.linear-project-id}}
+        linear-issue-project-ids: ${{inputs.linear-project-id}}
     - name: Prepend the title with the Linear issue identifier.
       # Not enforcing that the found or created task is at the start for in the case of multiple tasks in the title.
       if: ${{!contains(github.event.pull_request.title, steps.find.outputs.linear-issue-identifier || steps.create.outputs.linear-issue-identifier)}}
